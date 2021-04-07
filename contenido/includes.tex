@@ -1,0 +1,71 @@
+\usepackage[utf8]{inputenc}
+%\usepackage[titletoc]{appendix}
+\usepackage[toc,page]{appendix}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage{ae}
+\usepackage[inner=3.0cm,outer=2.5cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[printonlyused]{acronym}
+\usepackage{hlundef}
+\usepackage{tesis}
+\usepackage[inline]{enumitem}
+\usepackage[usenames,dvipsnames,table,xcdraw]{xcolor}
+\usepackage{dsfont}
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{breakcites}
+\usepackage{xcolor}
+\usepackage{color,soul}
+\usepackage{multirow}
+\usepackage{tikz,pgfplots,pgfplotstable}
+\usepackage{capt-of}
+\usepackage{csvsimple}
+\usepackage{caption}
+% change color of short text on acronyms
+\AtBeginEnvironment{acronym}{
+  \renewcommand*{\aclabelfont}[1]{\textbf{\acsfont{\color{blue}#1}}}
+}
+\usepackage{enumitem}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{mathrsfs}
+\newtheorem{proposicion}{Proposición}[section]
+\usepackage{amsfonts}
+\usepackage{etoolbox}
+\usepackage[group-separator={,}]{siunitx}
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\setcounter{secnumdepth}{3}
+\usepackage{filecontents,pgfplots,pgfplotstable}
+\pgfplotsset{compat=1.13}
+\usepgfplotslibrary{colormaps}
+\usepackage{sidecap}
+\usepackage{natbib}
+% Define color for hyperref library used on content and acronyms
+\definecolor{purple2}{rgb}{0.3, 0.12, 0.3} 
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{citecolor=blue}
+\hypersetup{urlcolor=red}
+\hypersetup{linkcolor=purple2}
+\usepackage{cleveref}
+\usepackage{tikz-qtree}
+\usepackage{arydshln}
+\usetikzlibrary{shapes.geometric, arrows, decorations.pathreplacing, shadows,trees, positioning, calc, tikzmark, spy, mindmap, matrix}
+\tikzstyle{roundedFrame} = [rectangle, text centered, rounded corners, draw=gray]
+\tikzstyle{input} = [rectangle,text centered, draw=none]
+\tikzstyle{emptyFrame} = [rectangle,text centered, draw=white]
+\tikzstyle{frame} = [rectangle, text centered, draw=gray]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\usepackage{pifont} % DING
+\pagenumbering{Roman}
+% line for define definitions
+\newtheorem{defn}{Definition}[section]
+% lines for translate appendix package to spanish
+ \addto\captionsspanish{
+     \renewcommand{\appendixtocname}{Apéndices}
+     \renewcommand{\appendixpagename}{Apéndices}
+ }
+% define colors
+\input{contenido/colors.tex}

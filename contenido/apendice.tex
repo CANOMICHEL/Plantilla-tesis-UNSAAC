@@ -1,0 +1,22 @@
+\begin{appendices}
+\chapter{Título de Apéndice}
+\section{Primer subtitulo}
+
+  Insertando una imagen de prueba:
+  %% insertar imagen
+  \begin{figure}
+  \centering
+  \subfloat[]{\includegraphics[width=5in]{graficos/pipeline.pdf}}
+  \caption[Figura en apéndice.]
+  {Ilustraci\'on A.1: Esta es una figura de prueba para el apéndice.}
+  \label{RoboAcci}
+  \end{figure}
+
+% Instrucción para no insertar la imagen en blanco
+\let\cleardoublepage\clearpage
+  
+\chapter{Título Segundo Apéndice}
+\section{Segundo subtitulo}
+Aquí va el contenido del segundo Apéndice.
+
+\end{appendices}

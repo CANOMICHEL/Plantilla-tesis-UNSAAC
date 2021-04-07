@@ -1,0 +1,45 @@
+\chapter{Marco Teórico}
+\label{chap:cha2}
+
+Cada capítulo deberá contener una breve introducción que describe en forma rápida el contenido del mismo. En este capítulo va el marco teórico. (pueden ser dos capítulos de marco teórico)
+
+Este capítulo presenta conceptos relacionados a nuestro método o abordaje de modo que el lector pueda familiarizarse con los temas expuestos.
+
+
+Ejemplo de como escribir seudo código en latex.
+\begin{algorithm}[!htb]
+	\caption{\ac{AP}.}\label{alg:ap}
+	\begin{algorithmic}[1]
+		\Procedure{ClusteringAP}{$S$}
+		\State $R(i,k) = 0, ~A(i,j)= 0, ~ \forall i,k$
+		
+		\While{ Until converge }
+		\State $R(i,k) = S(i,k) - max(A(i,j) + S(i,j))~|~ (j \in [1,n]; j\neq k) $
+		
+		\State $A(i,k) = min (0, R(k,k) + \sum_j max(0, R(j,k))), ~|~ (j \in [1,n]; ~j\neq i; ~j\neq k )$
+		
+		\State $A(k,k) = \sum_i max(0,R(i,k)) , ~|~ (i \neq k)$ 
+		
+		\EndWhile
+		\State \textbf{return} $Trks$
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm} 
+
+Ejemplo de como hacer definiciones en latex:
+
+\begin{defn}
+Given a set of $n + 1$ data points $(x_i, y_i)$ where no two $x_i$ are the same, there is a polynomial $p$ of degree at most $n$ with the property $p(x_i) = y_i$, $i=0,\ldots,n$.
+\end{defn}
+
+Ejemplo de ecuaciones: 
+\begin{equation}
+	\label{eqn:interpolation}
+	 p(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_2 x^2 + a_1 x + a_0
+\end{equation}
+
+%\subsubsection{Sub sub sección} 
+ 
+ Ejemplo de utilización de abreviaturas, \ac{SPC}.
+ 
+ 
